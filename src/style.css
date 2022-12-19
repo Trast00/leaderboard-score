@@ -1,5 +1,5 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter var", sans-serif;
@@ -26,7 +26,7 @@ h2 {
 }
 
 /* Recent score */
-.recent-scores{
+.recent-scores {
   width: 50%;
 }
 
@@ -50,8 +50,6 @@ h2 {
   padding: 6px 12px 6px 16px;
 }
 
-
-
 /* Form: Add new score */
 .new-score {
   display: flex;
@@ -74,5 +72,3 @@ h2 {
   height: 40px;
   align-self: flex-end;
 }
-
-
