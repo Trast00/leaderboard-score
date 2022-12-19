@@ -12,19 +12,16 @@
   <section class="recent-scores">
     <h2>Recent Scores <button type="button" id="reset-list-scores">Reset</button></h2>
     
-    <ul class="list-scores">
-      <li class="score">Score : 100</li>
-      <li class="score">Score : 75</li>
-      <li class="score">Score : 55</li>
+    <ul id="list-scores" class="list-scores">
     </ul>
   </section>
-  <form action="submit" class="new-score">
+  <form class="new-score">
     <h2>Add your score</h2>
     <label for="score">
-      <input type="text" name="score" id="score" placeholder="Add your score">
+      <input type="number" name="score" id="score" placeholder="Add your score" minlength="1" step=".01">
     </label>
     <label for="name">
-      <input type="text" name="name" id="name" placeholder="Add your name">
+      <input type="text" name="name" id="name" placeholder="Add your name" minlength="3">
     </label>
     <button type="submit">Submit</button>
   </form>
