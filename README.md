@@ -2,7 +2,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Leaderboard Score ](#-leaderboard-score-)
 - [Leaderboard-score](#leaderboard-score)
   - [🛠 Built With ](#-built-with-)
@@ -38,7 +38,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link]()
+[Live Demo Link](https://trast00.github.io/leaderboard-score/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
