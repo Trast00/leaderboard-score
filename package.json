@@ -1,0 +1,25 @@
+{
+  "name": "leaderboard-score",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trast00/leaderboard-score.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trast00/leaderboard-score/issues"
+  },
+  "homepage": "https://github.com/Trast00/leaderboard-score#readme"
+}
