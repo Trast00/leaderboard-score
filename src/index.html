@@ -4,9 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a1c06e2fcd.js" crossorigin="anonymous"></script>
+  <title>Leader Board Score</title>
 </head>
 <body>
-  
+  <h1>Leader Board Score</h1>
+  <section class="recent-scores">
+    <h2>Recent Scores <button type="button" id="reset-list-scores">Reset</button></h2>
+    
+    <ul class="list-scores">
+      <li class="score">Score : 100</li>
+      <li class="score">Score : 75</li>
+      <li class="score">Score : 55</li>
+    </ul>
+  </section>
+  <form action="submit" class="new-score">
+    <h2>Add your score</h2>
+    <label for="score">
+      <input type="text" name="score" id="score" placeholder="Add your score">
+    </label>
+    <label for="name">
+      <input type="text" name="name" id="name" placeholder="Add your name">
+    </label>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
