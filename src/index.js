@@ -1,9 +1,12 @@
 import './style.css';
 import ScoreManager from './modules/ScoreManager.js';
+import GameManager from './modules/GameManager.js';
 
 /* UI elements */
 const addNewScore = document.forms[0];
 const btnReset = document.getElementById('reset-list-scores');
+
+const gameManager = new GameManager();
 
 const scoreManager = new ScoreManager();
 
@@ -13,9 +16,19 @@ addNewScore.addEventListener('submit', (event) => {
     || addNewScore.score.value.length === 0) {
     return;
   }
-  scoreManager.add(addNewScore.name.value, addNewScore.score.value);
+  const name = addNewScore.name.value;
+  const score = parseInt(addNewScore.score.value, 10);
+  gameManager.addScore(name, score);
+  scoreManager.add(name, score);
 });
 
-btnReset.addEventListener('click', () => {
-  scoreManager.reset();
+btnReset.addEventListener('click', async () => {
+  const data = await gameManager.getScores();
+  data.result.forEach((element) => {
+    scoreManager.add(element.user, element.score);
+  });
+});
+
+window.addEventListener('load', async () => {
+  btnReset.click();
 });
