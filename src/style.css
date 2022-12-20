@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter var", sans-serif;
+}
+
+body {
+  padding: 48px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Recent score */
+.recent-scores {
+  width: 50%;
+}
+
+#reset-list-scores {
+  height: 40px;
+  margin-left: 8px;
+  padding: 8px 12px 8px 12px;
+}
+
+.list-scores {
+  list-style: none;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+}
+
+.list-scores :nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.score {
+  padding: 6px 12px 6px 16px;
+}
+
+/* Form: Add new score */
+.new-score {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.new-score label {
+  margin-bottom: 16px;
+}
+
+.new-score input {
+  width: 100%;
+  padding: 8px 12px 8px 12px;
+  border: 1px solid #d3d3d3;
+}
+
+.new-score button {
+  width: 100px;
+  height: 40px;
+  align-self: flex-end;
+}
