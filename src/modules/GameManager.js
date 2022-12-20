@@ -6,23 +6,6 @@ export default class GameManager {
     this.list = [];
   }
 
-  create = async (name) => {
-    await fetch(this.url, {
-      method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          response.json()
-            .then(((data) => {}));
-        }
-      });
-  }
-
   addScore = async (name, score) => {
     await fetch(this.gameUrl, {
       method: 'POST',
