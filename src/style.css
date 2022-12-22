@@ -34,11 +34,26 @@ h2 {
   width: 50%;
 }
 
-#refresh-list-scores {
-  height: 40px;
+#delete-list-scores {
+  height: 30px;
   margin-left: 8px;
   padding: 8px 12px 8px 12px;
+  font-size: 20px;
+  color: #fc4343;
+  background: none;
+  border: none;
 }
+
+#refresh-list-scores {
+  height: 30px;
+  margin-left: 8px;
+  padding: 8px 12px 8px 12px;
+  font-size: 20px;
+  color: #00b4d8;
+  background: none;
+  border: none;
+}
+
 
 .list-scores {
   list-style: none;
