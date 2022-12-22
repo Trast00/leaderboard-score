@@ -24,15 +24,13 @@ addNewScore.addEventListener('submit', (event) => {
 
 btnReset.addEventListener('click', async () => {
   const data = await gameManager.getScores();
-  scoreManager.list = []
-  document.getElementById('list-scores').innerHTML = ''
+  scoreManager.list = [];
+  document.getElementById('list-scores').innerHTML = '';
   data.result.forEach((element) => {
     scoreManager.add(element.user, element.score);
   });
-  console.log("Reseted: ", scoreManager.list)
 });
 
 window.addEventListener('load', async () => {
   btnReset.click();
-  console.log("Loaded: ", scoreManager.list)
 });
