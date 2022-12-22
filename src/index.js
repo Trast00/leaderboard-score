@@ -4,7 +4,7 @@ import GameManager from './modules/GameManager.js';
 
 /* UI elements */
 const addNewScore = document.forms[0];
-const btnReset = document.getElementById('reset-list-scores');
+const btnReset = document.getElementById('refresh-list-scores');
 
 const gameManager = new GameManager();
 
@@ -24,6 +24,8 @@ addNewScore.addEventListener('submit', (event) => {
 
 btnReset.addEventListener('click', async () => {
   const data = await gameManager.getScores();
+  scoreManager.list = [];
+  document.getElementById('list-scores').innerHTML = '';
   data.result.forEach((element) => {
     scoreManager.add(element.user, element.score);
   });
