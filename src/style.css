@@ -34,7 +34,7 @@ h2 {
   width: 50%;
 }
 
-#reset-list-scores {
+#refresh-list-scores {
   height: 40px;
   margin-left: 8px;
   padding: 8px 12px 8px 12px;
@@ -54,7 +54,7 @@ h2 {
 }
 
 .list-scores :nth-child(1){
-  background-color: #ffdd00;
+  background-color: #fde337;
   color: #ff7b00;
   font-weight: 700;
 }
