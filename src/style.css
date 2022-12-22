@@ -10,6 +10,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-image: url("../images/WebBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -45,9 +49,32 @@ h2 {
 .list-scores :nth-child(even) {
   background-color: #f3f3f3;
 }
+.list-scores :nth-child(odd) {
+  background-color: white;
+}
+
+.list-scores :nth-child(1){
+  background-color: #ffdd00;
+  color: #ff7b00;
+  font-weight: 700;
+}
+
+.list-scores :nth-child(2){
+  background-color: #00b4d8;
+  color: #023e8a;
+  font-weight: 700;
+}
+
+.list-scores :nth-child(3){
+  background-color: #efdebe;
+  color: #6f5006;
+  font-weight: 700;
+}
+
+
 
 .score {
-  padding: 6px 12px 6px 16px;
+  padding: 12px 16px 12px 16px;
 }
 
 /* Form: Add new score */
@@ -71,4 +98,35 @@ h2 {
   width: 100px;
   height: 40px;
   align-self: flex-end;
+  background-color: #52dd5b;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.new-score button:hover {
+  background-color: #28C632;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    background-image: url("../images/MobileBackground.png");
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .recent-scores {
+    width: 100%;
+  }
+
+  .new-score {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
